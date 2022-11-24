@@ -8,6 +8,16 @@ padding: 15px 31px;
 border-radius: 6px;
 background: #0E8784;
 
+    margin-left: 0;
+
+border: none;
+&:hover{
+    background: #66D2CF;
+}
+&:active{
+    background: #E2DEDB;
+}
+
 @media screen and (max-width:500px) {
     background-color:#0E8784;
 }

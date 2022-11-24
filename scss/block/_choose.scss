@@ -1,20 +1,18 @@
-
 .choose__bock {
   max-width: 1111px;
-  height: 196px;
   background-image: url(../../image/collection.png);
   background-repeat: no-repeat;
 }
 .choose__list {
+  max-width: 1111px;
   display: flex;
+  flex-wrap: wrap;
+  background-color: red;
   align-items: center;
-  justify-content: space-between;
 }
 .choose__packet {
   max-width: 256px;
   height: 193px;
-
-
 }
 
 .choose__title {
@@ -37,60 +35,54 @@
   color: #333d4b;
 }
 
-@media screen and (max-width:689px) {
-    .choose__bock{
-        background-image: url(/image/collection-second.png);
-     
-    }
+@media screen and (max-width: 1039px) {
+  .choose__bock {
+    background-image: url(/image/collection-second.png);
+  }
 
-    .choose__packet{
-        
-        max-width: 255px;
-        height: 193px;
-
-    
-    }
-.choose__list{
+  .choose__packet {
+    max-width: 255px;
+    height: 193px;
+  }
+  .choose__list {
     flex-direction: column;
-}
-.choose__item{
+  }
+  .choose__item {
     display: flex;
     align-items: center;
     max-width: 573px;
+  }
+  .choose__title {
+    max-width: 255px;
+    font-family: "Fraunces";
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #333d4b;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+  }
+  .choose__text {
+    max-width: 282px;
+    font-family: "Barlow";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #333d4b;
+  }
 }
-    .choose__title {
-        max-width: 255px;
-        font-family: "Fraunces";
-        font-weight: 900;
-        font-size: 24px;
-        line-height: 32px;
-        text-align: center;
-        color: #333d4b;
-        margin-bottom: 24px;
-      }
-      .choose__text {
-        max-width: 282px;
-        font-family: "Barlow";
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 25px;
-        text-align: center;
-        color: #333d4b;
-      }
-    
-    }
 
-   @media screen and (max-width:375px) {
-    .choose__bock{
-        background-image: url(../../image/pllalalaldsnhbdbhbsab.svg);
-    }
-
-    .choose__item{
-        flex-direction: column;
-    }
-    .choose__text{
-        margin-bottom: 48px;
-    }
-   }
-
-
+@media screen and (max-width: 375px) {
+  .choose__bock {
+    background-image: url(../../image/pllalalaldsnhbdbhbsab.svg);
+  }
+  .choose__item {
+    flex-direction: column;
+  }
+  .choose__text {
+    margin-bottom: 48px;
+  }
+}

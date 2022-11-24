@@ -1,0 +1,126 @@
+.work__container {
+  max-width: 1045px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+.work{
+  padding-bottom: 200px;
+}
+
+.work__site-text {
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #83888f;
+  padding: 0 40px;
+  margin-bottom: 80px;
+}
+.work__line {
+  max-width: 760px;
+  height: 1px;
+
+  border: 2px solid #fdd6ba;
+  margin-bottom: 82px;
+  padding-left: auto;
+  padding-right: auto;
+}
+.work__block {
+  display: flex;
+  align-items: flex-start;
+  gap: 95px;
+  padding-bottom: 64px;
+}
+.work__title {
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: #fdd6ba;
+  margin-bottom: 38px;
+}
+.work__mix {
+  padding: 0 40px;
+}
+.work__sub-title {
+  max-width: 200px;
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  color: #333d4b;
+  margin-bottom: 47px;
+}
+
+.work__text {
+  font-family: "Barlow";
+  max-width: 285px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #333d4b;
+}
+.work__btn {
+  @include btn;
+}
+
+@media screen and (max-widrh: 994px) {
+  .work__container {
+    margin-left: 10%;
+  }
+
+  .work__site-text {
+    margin-bottom: 40px;
+  }
+  .work__block {
+    max-width: 688px;
+    gap: 10px;
+  }
+  .work__line {
+    max-width: 467px;
+    height: 1px;
+    border: 2px solid #fdd6ba;
+    margin-bottom: 82px;
+    padding-left: auto;
+    padding-right: auto;
+  }
+
+  .work__title {
+    margin-bottom: 42px;
+  }
+  .work__sub-title {
+    max-width: 223px;
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 38px;
+  }
+  .work__text {
+    font-family: "Barlow";
+    max-width: 223px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .work__btn{
+    margin-left:0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .work__block {
+    display: flex ;
+  
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .work{
+   display: flex;
+  }
+  .work__site-text{
+    text-align: center;
+  }
+  .work__btn{
+    margin-left: 10%;
+  }
+}
